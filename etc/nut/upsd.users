@@ -1,0 +1,15 @@
+[masteruser]
+	password	= supersecuremasterpassword
+	actions		= SET
+	instcmds	= ALL
+
+[testuser]
+	password	= passwordforupstests
+	instcmds	= test.battery.start
+	instcmds	= test.battery.stop
+
+[upsmon]
+	password	= upsmonitorpassword
+	upsmon primary  # (or secondary)
+	# "primary" will be shutdown last
+	# "secondary" will be shutdown first
